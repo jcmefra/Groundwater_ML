@@ -9,7 +9,7 @@ model_file = 'Trained_model.pkl'  # Replace with your actual filename
 loaded_model = joblib.load(model_file)
 
 # Load and preprocess the new, untrained data
-data_file = 'data_for_training/Guapota_Res.csv'  # Replace with the filename of your new data
+data_file = 'data_for_training/EL EDEN_TOMO-01.csv'  # Replace with the filename of your new data
 data = pd.read_csv(data_file)
 data_predict = data.drop(columns=['elec_pos'])
 
