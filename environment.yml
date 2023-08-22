@@ -1,0 +1,9 @@
+name: groundwater-env
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - flask
