@@ -46,7 +46,7 @@ The dataset for training the model should be in CSV format, containing the follo
 - `cond`: Conductivity value
 - `groundwater_presence`: Binary indicator of groundwater presence (0 or 1)
 
-Refer to the provided sample data for an example.
+Refer to the provided sample data for an example. Groundwater values can vary depend on your needs, the code already includes some lines to add groundwater_presence column based on a defined rho thereshold, see step 2.
 
 ## Implementing the Model
 
