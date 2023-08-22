@@ -13,18 +13,18 @@ This repository contains code for a machine learning model that detects groundwa
 
 ## 1. Create Anaconda Environment
 
-To create a new Anaconda environment for this project, use the following command:
+**To create a new Anaconda environment for this project, use the following command:**
 
 conda create --name groundwater-env python=3.8
 
-Activate the environment:
+**Activate the environment:**
 
 conda activate groundwater-env
 
 
 ## Conda Environment Setup
 
-Install required packages using conda from the provided environment.yml file:
+**Install required packages using conda from the provided environment.yml file:**
 
 conda env update -f environment.yml
 
