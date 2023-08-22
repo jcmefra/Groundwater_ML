@@ -9,7 +9,8 @@ This repository contains code for a machine learning model that detects groundwa
 - 3. Training the Model
 - 4. Dataset Format
 - 5. Implementing the Model
-- 6. Future Improvements
+- 6. Using the Trained Model
+- 7. Future Improvements
 
 ## 1. Create Anaconda Environment
 
@@ -21,13 +22,11 @@ conda create --name groundwater-env python=3.8
 
 conda activate groundwater-env
 
-
-## 3. Conda Environment Setup
+## 2. Conda Environment Setup
 
 **Install required packages using conda from the provided environment.yml file:**
 
 conda env update -f environment.yml
-
 
 ## 3. Training the Model
 
@@ -36,7 +35,7 @@ conda env update -f environment.yml
 3. Execute the code step by step, following the comments for each section.
 4. The model will be trained and evaluated, and feature importances will be displayed.
 
-## Dataset Format
+## 4. Dataset Format
 
 The dataset for training the model should be in CSV format, containing the following columns:
 
@@ -46,28 +45,35 @@ The dataset for training the model should be in CSV format, containing the follo
 - `cond`: Conductivity value
 - `groundwater_presence`: Binary indicator of groundwater presence (0 or 1)
 
-Refer to the provided sample data for an example. Groundwater values can vary depend on your needs, the code already includes some lines to add groundwater_presence column based on a defined rho thereshold, see step 2.
+Refer to the provided sample data for an example. Groundwater values can vary depending on your needs; the code already includes some lines to add the `groundwater_presence` column based on a defined rho threshold, see step 2.
 
 ## 5. Implementing the Model
 
 To implement the trained model on new survey data:
 
-1. Load your new survey data in a DataFrame with columns (`elec_pos`, `depth`, `rho`, `cond`).
+1. Load your new survey data into a DataFrame with columns (`elec_pos`, `depth`, `rho`, `cond`).
 2. Create a meshgrid for electrode positions and depth.
 3. Predict groundwater presence using the trained model.
 4. Visualize the results using contour plots.
+5. Save the trained model as a *.pkl file
 
-Refer to the provided code for prediction and visualization steps.
+## 6. Using the Trained Model
 
-## Future Improvements
+To use the trained model for prediction on new data:
+
+1. Load the trained model using joblib.
+2. Load and preprocess the new, untrained data.
+3. Preprocess the new data (same preprocessing as training data).
+4. Predict using the loaded model.
+5. Display predictions.
+
+## 7. Future Improvements
 
 - Incorporate multiple surveys for more diverse training.
 - Explore other machine learning algorithms for comparison.
 - Enhance the model's accuracy through hyperparameter tuning.
 - Develop a user-friendly interface for input and visualization.
 - Implement additional features like uncertainty estimation.
-
-Feel free to contribute to this repository by submitting pull requests or issues!
 
 ---
 

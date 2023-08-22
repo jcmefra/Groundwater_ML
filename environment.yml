@@ -1,9 +1,16 @@
 name: groundwater-env
 channels:
   - defaults
+  - conda-forge 
+  - anaconda
+  - fastai
 dependencies:
   - python=3.8
   - pandas
   - scikit-learn
   - matplotlib
   - flask
+  - xgboost
+  - pyqt
+  - joblib
+  - opencv-python-headless
