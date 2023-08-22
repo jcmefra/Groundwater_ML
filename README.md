@@ -22,7 +22,7 @@ conda create --name groundwater-env python=3.8
 conda activate groundwater-env
 
 
-## 3. onda Environment Setup
+## 3. Conda Environment Setup
 
 **Install required packages using conda from the provided environment.yml file:**
 
