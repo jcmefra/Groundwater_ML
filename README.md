@@ -28,6 +28,23 @@ conda activate groundwater-env
 
 conda env update -f environment.yml
 
+# Important note:
+
+**If you don't have a Nvidia GPU you may get this error when installing environment.yml:**
+
+Could not solve for environment specs
+The following packages are incompatible
+├─ libxgboost ==1.7.6 cuda120h75debf4_0 is uninstallable because it requires
+│  └─ __cuda  , which is missing on the system;
+├─ py-xgboost ==1.7.6 cuda120py310h379b205_0 is uninstallable because it requires
+│  └─ __cuda  , which is missing on the system;
+└─ xgboost ==1.7.6 cuda120py310h379b205_0 is uninstallable because it requires
+   └─ __cuda  , which is missing on the system.
+
+**In this case you should install the package manually using:**
+
+conda install -c conda-forge py-xgboost
+
 ## 3. Training the Model
 
 1. Prepare your training data by following the dataset format guidelines.
