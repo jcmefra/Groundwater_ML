@@ -72,6 +72,7 @@ To use the trained model for prediction on new data:
 
 - Incorporate multiple surveys for more diverse training and improve model prediction accuracy.
 - Instead of using a fixed 80/20 split, techniques like cross-validation can be used to improve the model's ability to generalize.
+- Adding more variables to the dataframe (i.e. rock type, porosity) to improve the criteria for groundwater prediction.
 - Improve Model Performance at Boundaries.
 - Enhance Groundwater Visualization by using dedicated libraries like GeoPandas.
 - Explore other machine learning algorithms for comparison.
