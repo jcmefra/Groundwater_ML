@@ -68,8 +68,9 @@ To use the trained model for prediction on new data:
 5. Display predictions.
 
 ## 7. Future Improvements
+**Feel free to do pull requests or for this repository to make improvements**
 
-- Incorporate multiple surveys for more diverse training and improve model prediction accuracu.
+- Incorporate multiple surveys for more diverse training and improve model prediction accuracy.
 - If we use 80/20 for training/test, we miss important information so it needs to be improved adding more surveys.
 - Model is not working as expected at the center and at the bottom boundary.
 - Groundwater precision and visualization of the data need to be improved as well.
