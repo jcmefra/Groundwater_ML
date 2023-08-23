@@ -69,7 +69,10 @@ To use the trained model for prediction on new data:
 
 ## 7. Future Improvements
 
-- Incorporate multiple surveys for more diverse training.
+- Incorporate multiple surveys for more diverse training and improve model prediction accuracu.
+- If we use 80/20 for training/test, we miss important information so it needs to be improved adding more surveys.
+- Model is not working as expected at the center and at the bottom boundary.
+- Groundwater precision and visualization of the data need to be improved as well.
 - Explore other machine learning algorithms for comparison.
 - Enhance the model's accuracy through hyperparameter tuning.
 - Develop a user-friendly interface for input and visualization.
