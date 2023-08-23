@@ -31,7 +31,7 @@ conda env update -f environment.yml
 ## 3. Training the Model
 
 1. Prepare your training data by following the dataset format guidelines.
-2. Open the Jupyter Notebook or Python script for the model provided in this repository.
+2. Open the Jupyter Notebook or Python script for the model provided in this repository (groundwater.ipynb)
 3. Execute the code step by step, following the comments for each section.
 4. The model will be trained and evaluated, and feature importances will be displayed.
 
