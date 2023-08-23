@@ -71,13 +71,13 @@ To use the trained model for prediction on new data:
 **Feel free to do pull requests or for this repository to make improvements**
 
 - Incorporate multiple surveys for more diverse training and improve model prediction accuracy.
-- If we use 80/20 for training/test, we miss important information so it needs to be improved adding more surveys.
-- Model is not working as expected at the center and at the bottom boundary.
-- Groundwater precision and visualization of the data need to be improved as well.
+- Instead of using a fixed 80/20 split, techniques like cross-validation can be used to improve the model's ability to generalize.
+- Improve Model Performance at Boundaries.
+- Enhance Groundwater Visualization by using dedicated libraries like GeoPandas.
 - Explore other machine learning algorithms for comparison.
 - Enhance the model's accuracy through hyperparameter tuning.
 - Develop a user-friendly interface for input and visualization.
-- Implement additional features like uncertainty estimation.
+- Implement additional features like uncertainty estimation (boostrapping or Monte Carlo).
 
 ---
 
