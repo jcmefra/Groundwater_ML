@@ -68,7 +68,7 @@ To use the trained model for prediction on new data:
 5. Display predictions.
 
 ## 7. Future Improvements
-**Feel free to do pull requests or for this repository to make improvements**
+**Feel free to do pull requests to this repository to make improvements**
 
 - Incorporate multiple surveys for more diverse training and improve model prediction accuracy.
 - Instead of using a fixed 80/20 split, techniques like cross-validation can be used to improve the model's ability to generalize.
